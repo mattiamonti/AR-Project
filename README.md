@@ -1,3 +1,7 @@
+<p align="center">
+<img src="assets/logo.png" width="50%">
+</p>
+
 # Villaggio Virtuale
 
 Benvenuti nel nostro progetto di realtà aumentata: il **Villaggio Virtuale!**
