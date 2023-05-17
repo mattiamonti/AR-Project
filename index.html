@@ -23,7 +23,10 @@
         </a-assets>
 
         <a-marker id="marker-1" type="pattern" preset="custom" url="assets/marker-1.patt"
-            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5">
             <a-entity id="b1-model" scale="0.2267700577087117 0.2267700577087117 0.2267700577087117"
                 animation-mixer="loop: repeat" gltf-model="#casa-1" class="clickable"
                 gesture-handler></a-entity>
