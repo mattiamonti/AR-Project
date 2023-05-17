@@ -19,6 +19,7 @@
             <a-asset-item id="casa-2" src="assets/casa-2.glb"></a-asset-item>
             <a-asset-item id="casa-3" src="assets/casa-3.glb"></a-asset-item>
             <a-asset-item id="casa-4" src="assets/casa-4.glb"></a-asset-item>
+            <a-asset-item id="strada" src="assets/strada.glb"></a-asset-item>
         </a-assets>
 
         <a-marker id="marker-1" type="pattern" preset="custom" url="assets/marker-1.patt"
@@ -47,6 +48,13 @@
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
             <a-entity id="b4-model" scale="0.25 0.25 0.25"
                 animation-mixer="loop: repeat" gltf-model="#casa-4" class="clickable"
+                gesture-handler></a-entity>
+        </a-marker>
+
+        <a-marker id="marker-5" type="pattern" preset="custom" url="assets/marker-5.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+            <a-entity id="b5-model" scale="0.25 0.25 0.25"
+                animation-mixer="loop: repeat" gltf-model="#strada" class="clickable"
                 gesture-handler></a-entity>
         </a-marker>
 
