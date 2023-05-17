@@ -20,6 +20,6 @@ Per creare il progetto è stata sfruttata la libreria per la realtà aumentata A
 ### Istruzioni per l'uso
 1. Scaricare il file stampa-marker.pdf
 2. Stampare il file stampa-marker.pdf, in corrispondenza dei marker verranno visualizzate gli edifici
-3. Con un dispositivo (preferibilmente mobile) andare a questa [pagina web](https://github.com/mattiamonti/AR-Project)
+3. Con un dispositivo (preferibilmente mobile) andare a questa [pagina web](https://mattiamonti.github.io/AR-Project)
 4. Dare le autorizzazioni alla fotocamera richieste per far funzionare l'esperienza
 5. Inquadrare i marker così da veder comparire gli edifici
