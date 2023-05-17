@@ -16,23 +16,38 @@
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded gesture-detector>
         <a-assets>
             <a-asset-item id="casa-1" src="assets/casa-1.glb"></a-asset-item>
-            <a-asset-item id="casa-5" src="assets/casa-5.glb"></a-asset-item>
+            <a-asset-item id="casa-2" src="assets/casa-2.glb"></a-asset-item>
+            <a-asset-item id="casa-3" src="assets/casa-3.glb"></a-asset-item>
+            <a-asset-item id="casa-4" src="assets/casa-4.glb"></a-asset-item>
         </a-assets>
 
         <a-marker id="marker-1" type="pattern" preset="custom" url="assets/marker-1.patt"
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
-            <a-entity id="bowser-model" scale="0.2267700577087117 0.2267700577087117 0.2267700577087117"
+            <a-entity id="b1-model" scale="0.2267700577087117 0.2267700577087117 0.2267700577087117"
                 animation-mixer="loop: repeat" gltf-model="#casa-1" class="clickable"
                 gesture-handler></a-entity>
                 
         </a-marker>
 
-        <a-marker id="marker-5" type="pattern" preset="custom" url="assets/marker-5.patt"
+        <a-marker id="marker-2" type="pattern" preset="custom" url="assets/marker-2.patt"
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
-            <a-entity id="b-model" scale="0.25 0.25 0.25"
-                animation-mixer="loop: repeat" gltf-model="#casa-5" class="clickable"
+            <a-entity id="b2-model" scale="0.25 0.25 0.25"
+                animation-mixer="loop: repeat" gltf-model="#casa-2" class="clickable"
                 gesture-handler></a-entity>
-                
+        </a-marker>
+
+        <a-marker id="marker-3" type="pattern" preset="custom" url="assets/marker-3.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+            <a-entity id="b3-model" scale="0.25 0.25 0.25"
+                animation-mixer="loop: repeat" gltf-model="#casa-3" class="clickable"
+                gesture-handler></a-entity>
+        </a-marker>
+
+        <a-marker id="marker-4" type="pattern" preset="custom" url="assets/marker-4.patt"
+            raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+            <a-entity id="b4-model" scale="0.25 0.25 0.25"
+                animation-mixer="loop: repeat" gltf-model="#casa-4" class="clickable"
+                gesture-handler></a-entity>
         </a-marker>
 
         <a-entity camera></a-entity>
