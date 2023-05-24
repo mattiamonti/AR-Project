@@ -12,9 +12,12 @@
 </head>
 
 <body style="margin: 0; overflow: hidden;">
+    <!--setup scena-->
     <a-scene vr-mode-ui="enabled: false;" loading-screen="enabled: false;" renderer="logarithmicDepthBuffer: true;"
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" embedded gesture-detector>
+
         <a-assets>
+            <!--caricamento modelli 3D con i rispettivi id-->
             <a-asset-item id="casa-1" src="assets/casa-1.glb"></a-asset-item>
             <a-asset-item id="casa-2" src="assets/casa-2.glb"></a-asset-item>
             <a-asset-item id="casa-3" src="assets/casa-3.glb"></a-asset-item>
@@ -22,15 +25,16 @@
             <a-asset-item id="strada" src="assets/strada.glb"></a-asset-item>
         </a-assets>
 
+        <!--caricamento marker-->
         <a-marker id="marker-1" type="pattern" preset="custom" url="assets/marker-1.patt"
             raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" smooth="true"
             smoothCount="10"
             smoothTolerance=".01"
             smoothThreshold="5">
-            <a-entity id="b1-model" scale="0.2267700577087117 0.2267700577087117 0.2267700577087117"
+            <!--associazione marker a modello 3D con scala x,z,y-->
+            <a-entity id="b1-model" scale="0.23 0.23 0.23"
                 animation-mixer="loop: repeat" gltf-model="#casa-1" class="clickable"
                 gesture-handler></a-entity>
-                
         </a-marker>
 
         <a-marker id="marker-2" type="pattern" preset="custom" url="assets/marker-2.patt"
@@ -38,7 +42,7 @@
             smoothCount="10"
             smoothTolerance=".01"
             smoothThreshold="5">
-            <a-entity id="b2-model" scale="0.2267700577087117 0.2267700577087117 0.2267700577087117"
+            <a-entity id="b2-model" scale="0.23 0.23 0.23"
                 animation-mixer="loop: repeat" gltf-model="#casa-2" class="clickable"
                 gesture-handler></a-entity>
         </a-marker>
@@ -48,7 +52,7 @@
             smoothCount="10"
             smoothTolerance=".01"
             smoothThreshold="5">
-            <a-entity id="b3-model" scale="0.2267700577087117 0.2267700577087117 0.2267700577087117"
+            <a-entity id="b3-model" scale="0.23 0.23 0.23"
                 animation-mixer="loop: repeat" gltf-model="#casa-3" class="clickable"
                 gesture-handler></a-entity>
         </a-marker>
@@ -58,7 +62,7 @@
             smoothCount="10"
             smoothTolerance=".01"
             smoothThreshold="5">
-            <a-entity id="b4-model" scale="0.2267700577087117 0.2267700577087117 0.2267700577087117"
+            <a-entity id="b4-model" scale="0.23 0.23 0.23"
                 animation-mixer="loop: repeat" gltf-model="#casa-4" class="clickable"
                 gesture-handler></a-entity>
         </a-marker>
